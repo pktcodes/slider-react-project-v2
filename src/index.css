@@ -357,4 +357,24 @@ ul {
   margin: 0 auto;
   margin-top: 10rem;
   max-width: 800px;
+  text-align: center;
+  margin-bottom: 12rem;
+}
+
+.slick-title {
+  margin-bottom: 2rem;
+  text-transform: capitalize;
+  color: var(--grey-700);
+}
+
+.slick-slide img {
+  display: inline-block;
+}
+
+.slick-prev::before {
+  color: var(--primary-500);
+}
+
+.slick-next::before {
+  color: var(--primary-500);
 }
