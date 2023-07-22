@@ -5,7 +5,7 @@ import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
 import { shortList, list, longList } from './data';
 
 const Carousel = () => {
-  const [people, setPeople] = useState(shortList);
+  const [people, setPeople] = useState(list);
 
   const prevSlide = () => {
     console.log('previous');
@@ -17,11 +17,15 @@ const Carousel = () => {
 
   return (
     <section className="slider-container">
-      {people.map((person) => {
+      {people.map((person, personIndex) => {
         const { id, image, name, title, quote } = person;
 
         return (
-          <article className="slide" key={id}>
+          <article
+            key={id}
+            className="slide"
+            style={{ transform: `translateX(${100 * personIndex}%)` }}
+          >
             <img src={image} alt={name} className="person-img" />
             <h5 className="name">{name}</h5>
             <p className="title">{title}</p>
