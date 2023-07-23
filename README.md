@@ -17,6 +17,7 @@ HTML, CSS, JavaScript, ECMAScript, React - Hooks ~ useState, useEffect
 
 #### Packages
 [React Icons](https://www.npmjs.com/package/react-icons)
+
 [React Slick](https://www.npmjs.com/package/react-slick)
 
 #### Deployment / Hosting
